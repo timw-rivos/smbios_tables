@@ -1,0 +1,19 @@
+[package]
+name = "smbios_tables"
+version = "0.1.0"
+authors = ["Rivos, Inc."]
+description = "Infrastructure for creating SMBIOS tables"
+repository = "https://github.com/timw-rivos/smbios_tables"
+readme = "README.md"
+keywords = ["smbios"]
+license = "Apache-2.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+zerocopy = { version = "0.7.1", features = ["derive"] }
+bitflags = "2.5.0"
+paste = "*"
+static_assertions = "*"
+bitfield = "0.15.0"
